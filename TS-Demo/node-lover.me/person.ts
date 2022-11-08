@@ -76,7 +76,14 @@ let mysql = new MySQL('localhost', 3306);
 
 interface Person2 {
     readonly IdCard: string; // 身份证
+    name?: string;
+    [propName : string]: any;
 }
 
-let person: Person2 = { IdCard: "420321111112121313132" };
+let person: Person2 = { IdCard: 'asa', name:"aaaaaaaa" };
 
+function getPerson2(p: Person2) {
+    console.log(p);
+}
+
+getPerson2({IdCard:"aaa", b : 2});

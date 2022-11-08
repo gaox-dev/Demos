@@ -41,3 +41,8 @@ var MySQL = /** @class */ (function () {
     return MySQL;
 }());
 var mysql = new MySQL('localhost', 3306);
+var person = { IdCard: 'asa', name: "aaaaaaaa" };
+function getPerson2(p) {
+    console.log(p);
+}
+getPerson2({ IdCard: "aaa", b: 2 });
